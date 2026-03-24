@@ -1,19 +1,19 @@
 GET /api/health
-{"status":"ok","app":"API Mockup Tool","domain":"AI & Data"}
+{"status":"ok"}
 
 GET /api/schema
-{"statuses":["new", "processing", "validated", "deployed"],"fields":[{"key":"source_input"},{"key":"model_output"},{"key":"confidence_score"}]}
+{"domain":"Developer Experience","entity":"Engineering Initiative","statuses":["planned", "building", "testing", "released"]}
 
-POST /api/records
+POST /api/items
 {
   "id": 1,
-  "title": "Demo Record",
-  "status": "processing",
+  "title": "Phase3 Demo",
+  "status": "planned",
   "payload": {
-    "source_input": "Demo value",
-    "model_output": 12,
-    "confidence_score": "seed note"
+    "repo": "sample",
+    "risk_score": 5,
+    "technical_notes": "notes"
   },
-  "created_at": "2026-03-24T15:52:21.768493+00:00",
-  "updated_at": "2026-03-24T15:52:21.768493+00:00"
+  "created_at": "2026-03-24T16:15:10.935463+00:00",
+  "updated_at": "2026-03-24T16:15:10.935463+00:00"
 }
